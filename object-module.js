@@ -1,10 +1,6 @@
-// (function() {
-
-
 var items = {
     items: [],
     init: function() {
-        // console.log(this);
         this.cacheDom();
         this.bindEvents();
         this.renderList();
@@ -14,7 +10,6 @@ var items = {
         this.$input = this.$container.find('input[type="text"]');
         this.$submit = this.$container.find('input[type="submit"]');
         this.$list = this.$container.find('#content').find('ul');
-        // this.$item = this.$container.find('li');
     },
     bindEvents: function() {
         this.$submit.on('click', this.addItem.bind(this));
@@ -43,5 +38,3 @@ var items = {
 }
 
 items.init();
-
-// })();
