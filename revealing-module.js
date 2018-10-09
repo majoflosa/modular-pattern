@@ -36,6 +36,7 @@ var items = function() {
         for ( var i = 0; i < items.length; i++ ) {
             $list.append('<li>' + items[i] + '<a class="close" href="#">Close</a></li>');
         }
+        events.emit('itemsChanged', items.length);
     };
 
     return {
